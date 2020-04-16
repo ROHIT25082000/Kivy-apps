@@ -1,0 +1,37 @@
+<MyGrid>
+
+    firstname : kvname
+    lastname : kvlastname
+    email : kvemail
+
+    GridLayout:
+        cols : 1 
+        size : root.width - 200 , root.height - 200
+        pos : 100, 100
+            
+        GridLayout:
+            cols : 2
+            Label:
+                text : "First Name :"
+            
+            TextInput:
+                id : kvname
+                multiline : False
+            
+            Label:
+                text: "Last Name :"
+  
+            TextInput:
+                id : kvlastname
+                multiline : False
+
+            Label:                
+                text : "Email :"
+            
+            TextInput:
+                id : kvemail
+                multiline : False 
+
+        Button :
+            text : "Submit"
+            on_press : root.btn()
